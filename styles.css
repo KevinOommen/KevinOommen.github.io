@@ -176,7 +176,7 @@ section
 #gmail
 {
     height:3em;
-    filter: drop-shadow( 3px 3px 15px red);
+    filter: drop-shadow( 3px 3px 10px red);
     border:none;
 }
 #linkedin
