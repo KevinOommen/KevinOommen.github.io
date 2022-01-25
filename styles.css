@@ -22,23 +22,8 @@ header
     border-radius:0px 0px 15px 15px;
     box-sizing:border-box;
 }
-ul.navbar
-{
-    display:inline-flex;
-    list-style-type:none;
 
-    flex-flow:row wrap;
-}
 
-ul.navbar li
-{
-    margin-right:2em;
-
-}
-ul.navbar li a{
-     color:black;
-    text-decoration:none;
-}
 h1
 {
    font-family: 'Big Shoulders Display', cursive;
@@ -48,12 +33,12 @@ h1
    padding:0;
    color:white;
 }
-h3
+.heading
 {
 font-family: 'Bangers', cursive;
-text-align:center;
 font-size:3em;
-margin-top:5%;
+
+text-align:center;
 
 }
 p{
@@ -106,23 +91,33 @@ p{
      0 0 25px rgba(255,0,0,0.5),
      0 0 5px rgba(255,0,0,0.5);
 }
-
-.education
+main
 {
-    padding:1em;
-    display:flex;
+    display: flex;
     flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding:0;
+}
+section
+{
+    padding:0em;
+    margin:0;
+    display:flex;
+    width:33%;
+    flex-flow:column wrap;
     justify-content:space-between;
     align-items:stretch;
+    box-sizing:border-box;
 }
 .institute
 {
     display:inline-block;
-    width:30%;
 
+    margin:2%;
     box-sizing:border-box;
 
-    align-self:stretch;
+
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -137,15 +132,7 @@ p{
     font-weight:bolder;
     font-size:1.5em;
 }
-.inst_logo
-{
-    position:relative;
-    left:25%;
-    top:0;
-    text-align:center;
-    height:50%;
-    width:25%;
-}
+
 #placid{background-image:url("assets/placid_logo.png");
     background-repeat:no-repeat;
     background-size:contain;
@@ -164,34 +151,85 @@ p{
 {
 
     display:flex;
-    justify-content:space-between;
-    align-items:stretch;
-    height:25%;
-    padding-right:5px;
+    flex-flow:column wrap;
+    justify-content:space-around;
+    align-items:flex-start;
+    height:50%;
+    width:33%;
+
+
 }
+
 .links
 {   display:flex;
-    flex-flow:column;
-    position:fixed;
-    top:10%;
-    right:0;
+    flex-flow:column wrap;
+    justify-content:space-around;
+    align-items:flex-start;
+    height:50%;
+    width:33%;
+    padding-right:5px;
+
+}
+
 }
 #gmail
 {
-    height:50px;
+    height:3em;
     filter: drop-shadow( 3px 3px 15px red);
     border:none;
 }
 #linkedin
 {
-    height:50px;
+    height:3em;
     filter: drop-shadow( 3px 3px 15px blue);
     border:none;
 }
 #whatsapp
 {
-    height:50px;
-    filter: drop-shadow( 3px 3px 15px rgba);
+    height:3em;
+    filter: drop-shadow( 3px 5px 10px  rgba(0,180,0,1));
     border:none;
-    color:white;
+}
+#github
+{
+    height:3em;
+    filter: drop-shadow( 3px 5px 10px white);
+    border:none;
+}
+#hackerrank
+{
+    height:3em;
+    filter: drop-shadow( 3px 5px 10px rgba(35, 255, 15));
+    border:none;
+
+}
+.java,.python,.html_css
+{   width:200px;
+    height:200px;
+    box-sizing:border-box;
+    margin:auto;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center;
+}
+.java
+{
+     background-image:url("assets/java_logo.png");
+}
+.python
+{
+    background-image:url("assets/python_logo.png");
+}
+.html_css
+{
+    background-image:url("assets/html_css_logo.png");
+    text-align:center;
+}
+a
+{
+    text-align:center;
+}
+div.skills
+{
+
 }
